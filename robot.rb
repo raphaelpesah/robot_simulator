@@ -1,6 +1,7 @@
 class Robot
-	def initialize(name)
+	def initialize(name, color="white")
 		@name = name
+    @color = color
   	end
 
   	def name
@@ -8,9 +9,14 @@ class Robot
   	end
 
   	def color
-  		"white"
+  		@color
   	end
 
   	def white?
+      color == "white"
   	end
+
+    def say(something)
+      "**;* #{something} **;*"
+    end
 end
