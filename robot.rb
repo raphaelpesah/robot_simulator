@@ -1,8 +1,16 @@
 class Robot
 	def initialize(name)
+		@name = name
   	end
 
   	def name
-  		"Barnabé"
+  		@name
+  	end
+
+  	def color
+  		"white"
+  	end
+
+  	def white?
   	end
 end
