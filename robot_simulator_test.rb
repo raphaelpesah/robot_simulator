@@ -1,3 +1,18 @@
+<<<<<<< HEAD
+gem 'minitest', '~> 5.0'
+require 'minitest/autorun'
+require 'minitest/pride'
+
+require_relative 'robot'
+
+class RobotTest < Minitest::Test
+	
+	def test_it_has_a_name
+		robot = Robot.new("Barnabé")
+		assert_equal "Barnabé", robot.name
+  	end
+
+=======
 gem 'minitest', '>= 5.0.0'
 require 'minitest/autorun'
 require_relative 'robot_simulator'
@@ -180,4 +195,5 @@ class RobotSimulatorTest < Minitest::Test
     assert_equal [11, 5], robot3.coordinates
     assert_equal :north, robot3.bearing
   end
+>>>>>>> dbe69174e5a93c05aef594d1f58ab336fee3374b
 end
